@@ -10,13 +10,13 @@
     <div class="movie-container">
         <h1>Movie List</h1>
 
-        <?php foreach ($clients as $client): ?>
+        <?php foreach ($clients as $client) { ?>
             <div>
                 <h2><?php echo $client->name; ?></h2>
                 <p>Genres: <?php echo implode(", ", $client->genres); ?></p>
                 <p>Discount: <?php echo $client->discount; ?>%</p>
             </div>
-        <?php endforeach; ?>
+        <?php } ?>
     </div>
 </body>
 </html>
