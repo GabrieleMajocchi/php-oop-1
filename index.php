@@ -23,7 +23,7 @@ $client1 = new Movie('Mission impossible', 'Action');
 $client1->discount(25);
 var_dump($client1);
 
-$client2 = new Movie('Back to the future', 'Science fiction comedy');
+$client2 = new Movie('Back to the future', ['Science', 'Fiction comedy']);
 $client2->discount(15);
 var_dump($client2);
 
